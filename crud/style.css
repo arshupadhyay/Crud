@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: darkgrey;
+	padding: 0 10px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	transition: 1s;
+}
+
+.container{
+	max-width: 500px;
+	width: 100%;
+	background-color: whitesmoke;
+	margin: 20px auto;
+	padding: 25px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	border-radius: 20px;
+	
+}
+
+.container .title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: darkslategrey;
+	text-align: center;
+}
+
+.container .form {
+	width: 100%;
+}
+
+.container .form .input_field{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.container .form .input_field label{
+	width: 200px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.container .form .input_field .input,
+.container .form .input_field .textarea{
+	outline: none;
+	border: 1px solid lightgrey;
+	font-size: 15px;
+	padding: 6px 10px;
+	border-radius: 2px;
+	transition: all 0.5s ease;
+}
+
+.container .form .input_field .textarea{
+	resize: none;
+	height: 70px;
+	width: 60%;
+}
+
+.container .form .input_field .selectbox select{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	border: 1px solid lightgrey;
+	-webkit-appearance:none;
+	appearance: none;
+	border-radius: 3px;
+	outline: none;
+	transition: 4s;
+}
+
+.container .form .input_field .selectbox:before{
+	content: "";
+	position: absolute;
+	top:0;
+	right: 0;
+	border-radius: 8px solid black;
+}
+
+.container .form .input_field p{
+	font-size: 14px;
+	color: grey;
+}
+
+.container .form .input_field .check{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+.container .form .input_field .check input[type = "checkbox"]{
+	position: relative;
+	top: 0;
+	left: 0;
+	
+}
+
+.container .form .input_field .check .checkmark{
+	width: 15px;
+	height: 15px;
+	border-radius: 1px solid white;
+	position: relative;
+}
+
+.container .form .input_field .btn{
+	width: 60%;
+	padding: 8px 10px;
+	font-size: 15px;
+	margin-left: 20%;
+	border-radius: 5px;
+	border-radius: none;
+	font-weight: bold;
+	background-color: grey;
+	color: whitesmoke;
+}
